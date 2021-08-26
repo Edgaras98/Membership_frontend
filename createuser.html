@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="createusers.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Management</a>
+        <a href="users.html">Users</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Create User</h1>
+        <form>
+          <input type="text" placeholder="Name" id="nameinput2" />
+          <input type="text" placeholder="Surname" id="surnameinput" />
+
+          <input type="text" placeholder="Email adress" id="emailinput" />
+          <label for="chooseplan">Choose Membership plan</label>
+          <select name="chooseplan" id="chooseplan">
+            <option value="Trial">Trial</option>
+            <option value="Silver">Silver</option>
+            <option value="Gold">Gold</option>
+            <option value="Platinum">Platinum</option>
+          </select>
+        </form>
+        <a href="users.html">cancel</a>
+        <button id="post2">Create user</button>
+      </div>
+    </main>
+  </body>
+</html>
